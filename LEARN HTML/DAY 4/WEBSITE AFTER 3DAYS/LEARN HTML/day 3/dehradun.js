@@ -1,0 +1,1 @@
+alert(This website information is true from the resources of wikipedia)
