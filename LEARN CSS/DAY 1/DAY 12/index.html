@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color: rgb(64, 166, 184);
+            --seccolor:rgb(11, 161, 141);
+            --defpad: 23px;
+
+        }
+        .nav{
+            background-color: rgb(38, 35, 240) ;
+        }
+        .container{
+            background-color: rgba(17, 255, 255, 0.297);
+        }
+        ul li{
+            list-style: none;
+            padding: var(--defpad );
+            border: 2px solid var(--seccolor)
+        }
+        ul li:first-child{
+            --color: rgb(64, 246, 249);
+            background-color: var(--seccolor);
+            margin-left: -40px;
+            
+        }
+
+        ul{
+            display: flex;
+            background-color: rgb(80, 30, 243);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maiores dicta repudiandae sit asperiores fugit recusandae deleniti fuga, commodi ex suscipit labore quod inventore doloremque incidunt mollitia laboriosam, velit impedit nostrum ipsa ab praesentium. Necessitatibus corrupti totam at sunt temporibus amet magnam reiciendis nisi dolor.</div>
+</body>
+</html>
