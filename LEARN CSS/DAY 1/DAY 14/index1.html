@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+</head>
+<style>
+    /* .box:first-child{
+        background-color: aqua;
+
+    }
+    .box:nth-child(2){
+        background-color:rgb(117, 223, 163);
+    }
+    .box:nth-child(3){
+        background-color: rgb(233, 145, 244);
+    }
+    .box:nth-child(4)::first-letter{
+        color: rgb(9, 102, 223);
+    } */
+
+
+    /* .boxes * {
+        color: blue;
+        border: 1px solid black;
+    }
+    p,a,.box, [data-color="primary"][data-color="primary"]{
+        margin-top: 20px;
+        padding-top: 14px;
+    } */
+    /* .box:nth-child(odd){
+        background-color: blue;
+    } */
+    /* .box:nth-last-child(1){
+        background-color: blue;
+    }
+     */
+     .boxes::before{
+        content: "hello";
+     }
+     ::selection{
+        background-color: black;
+        color: aqua;
+     }
+</style>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am 1st box</div>
+        <div class="box">Hey I am 2nd box</div>
+        <div class="box">Hey I am 3rd box</div>
+        
+
+    </div>
+</body>
+
+</html>
