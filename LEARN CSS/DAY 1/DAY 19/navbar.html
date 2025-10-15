@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar website</title>
+</head>
+<style>
+    .logo img {
+        width: 134px;
+        height: 52px;
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .right ul {
+        display: flex;
+        gap: 34px;
+        /* padding: 4 0px; */
+    }
+
+    .right ul li {
+        list-style: none;
+        gap: 34px;
+        display: flex;
+        align-items: center;
+        font-family: 'Segoe UI';;
+        color: black;
+
+    }
+    .Download{
+        border: 2px solid black;
+        text-decoration: none;
+        padding: 4px;
+        color: black;
+}
+    .language{
+        font-size: 19px;
+        filter: grayscale(100%);
+        color: solid black;
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Product</li>
+                    <li>Pricing</li>
+                    <li>Resourses</li>
+                    <li>About us</li>
+                    <li><a class="Download" href="">DOWNLOAD</a></li>
+                    <li><span class="language">🌐English</span></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>

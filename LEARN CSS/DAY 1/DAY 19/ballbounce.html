@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BALL BOUNCE</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .container {
+        height: 500px;
+        width: 850px;
+        background-color: blue;
+        position: relative;
+    }
+
+    .ball {
+        height: 53px;
+        width: 53px;
+        border-radius: 27px;
+        background-color: red;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all 3s ease-in-out 1s;
+    }
+    .translate{
+        transform: translateX(100px) translateY(-213px);
+    }
+    .translate{
+        transform: translateX(200px) translateY(0px);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="ball translate">
+        </div>
+    </div>
+</body>
+
+</html>
