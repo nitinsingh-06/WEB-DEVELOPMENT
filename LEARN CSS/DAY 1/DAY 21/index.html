@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATION</title>
+</head>
+<style>
+    .container{
+        background-color:rgb(11, 98, 115);
+        height: 80vh;
+        width: 30vw;
+    }
+    .box{
+        width: 34px;
+        height: 45px;
+        background-color: aqua;
+        /* animation: nitinkaanimation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite ;
+        animation-timing-function: cubic-bezier(0, 0.49, 1, 1.62); 
+        animation-delay: 1s;
+        animation-direction: alternate-reverse;
+        animation-play-state: paused; */
+        /* animation: nitinkaanimation 3s cubic-bezier(0.05, 0.36, 1, 1) 1s 3 alternate forwards; */
+        animation: nitinkaanimation 3s ease-in-out 1s 2,
+                   nitin2 3s ease-in-out 1s 1   ;
+    }
+    
+    @keyframes nitinkaanimation {
+        from{
+            /* transform: translateX(100px); */
+            background-color: red;
+        }
+        to{
+            /* transform: translateY(100px); */
+            transform: translateX(1000px);
+            background-color: aquamarine;
+        }
+    }
+    @keyframes nitin2 { 
+        0%{
+            transform: rotate(20deg);
+        }
+        20%{
+            transform: rotate(50deg);
+        }
+        50%{
+            transform: rotate(100deg);
+        }
+        80%{
+            transform: rotate(200deg);
+        }
+        100%{
+            transform: rotate(220deg);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>    
+</body>
+</html>
